@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Instagram Feed - Agustin Mendez</title>
+	<link rel="shortcut icon" href="https://static.cdninstagram.com/rsrc.php/yr/r/rzWiSjZRxk5.webp" type="image/png">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+	<!-- Nav -->
+
+	<nav class="navbar navbar-expand-lg bg-body-tertiary">
+		<div class="container-fluid">
+			<div>
+				<i class="fa-brands fa-instagram fs-4 ps-2"></i>
+				<a class="navbar-brand fs-4" href="#">Instagram</a>
+			</div>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="" id="navbarSupportedContent">
+				<div class="d-flex gap-3">
+					<button class="btn text-light btn-success fs-5" type="button" data-bs-toggle="modal"
+						data-bs-target="#postModal">Create a new post</button>
+					<div class="dropdown pe-2">
+						<button class="btn btn-secondary dropdown-toggle fs-5" type="button" data-bs-toggle="dropdown"
+							aria-expanded="false">
+							<i class="fa-solid fa-gear fs-5"></i>
+						</button>
+						<ul class="dropdown-menu dropdown-menu-end">
+							<li><a class="dropdown-item fs-6" href="#">Profile</a></li>
+							<li><a class="dropdown-item fs-6" href="#">Accesibility</a></li>
+							<li><a class="dropdown-item fs-6" href="#">Privacy and Data</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Tabs -->
+
+	<ul class="nav nav-tabs justify-content-center border border-1" id="myTab" role="tablist">
+		<li class="nav-item" role="presentation">
+			<button class="nav-link btn text-success fs-3" id="home-tab" data-bs-toggle="tab"
+				data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
+				aria-selected="true"><i class="fa-solid fa-border-all fs-3"></i></button>
+		</li>
+		<li class="nav-item" role="presentation">
+			<button class="nav-link btn text-success fs-3" id="profile-tab" data-bs-toggle="tab"
+				data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane"
+				aria-selected="false"><i class="fa-solid fa-square fs-3"></i></button>
+		</li>
+	</ul>
+	<div class="tab-content" id="myTabContent">
+
+		<!-- Content Profile Grid -->
+
+		<div class="tab-pane fade show" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+
+			<!-- Contenido del grid -->
+
+			<div class="container-fluid">
+				<div class="row g-2 align-items-stretch">
+					<div class="col-4">
+						<div class="img-container">
+							<img class="post-img"
+								src="https://images.unsplash.com/photo-1720529527155-8d16289980ef?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="img-container"><img class="post-img"
+								src="https://images.unsplash.com/photo-1589909202802-8f4aadce1849?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="img-container"><img class="post-img"
+								src="https://images.unsplash.com/photo-1576541572620-cbc5457517b4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGFyZ2VudGluYXxlbnwwfHwwfHx8MA%3D%3D">
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="img-container"><img class="post-img"
+								src="https://images.unsplash.com/photo-1690488828989-e12b6f06516b?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="img-container"><img class="post-img"
+								src="https://images.unsplash.com/photo-1616023586443-92f48106e41c?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="img-container"><img class="post-img"
+								src="https://images.unsplash.com/photo-1606494554797-279096d01a9a?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="img-container"><img class="post-img"
+								src="https://images.unsplash.com/photo-1698315474418-afa588b03f0e?q=80&w=685&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="img-container"><img class="post-img"
+								src="https://images.unsplash.com/photo-1765974159972-91a3cda306e5?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="img-container"><img class="post-img"
+								src="https://images.unsplash.com/photo-1680281290965-9288d18339a1?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- Content Profile -->
+
+		<div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+			<div class="container" id="contentProfile">
+				<div class="row justify-content-center mb-6">
+					<div class="individual-post col-12 col-md-8 mb-4">
+						<div class="post-header d-flex justify-content-between align-items-center p-2">
+							<h3>Mi bandera</h3>
+							<p>25/03/2026</p>
+						</div>
+						<img class="img-fluid"
+							src="https://images.unsplash.com/photo-1720529527155-8d16289980ef?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+						<p class="post-icons"><i class="fa-regular fa-heart"></i><i
+								class="fa-regular fa-comment ms-2 me-2"></i><i class="fa-regular fa-paper-plane"></i>
+						</p>
+						<p class="post-text"><strong>1812 Likes</strong></p>
+						<p class="post-text">Para empezar los post no se me ocurrió mejor cosa que lo que representa la
+							bandera argentina,
+							con memorias y nostalgia, esté donde esté. Recordando con solo mirar al cielo que casa está
+							a 11.000km pero en todos lados a la vez.</p>
+					</div>
+
+					<div class="individual-post col-12 col-md-8 mb-4">
+						<div class="post-header d-flex justify-content-between align-items-center p-2">
+							<h3>Monumento</h3>
+							<p>26/03/2026</p>
+						</div>
+						<img class="img-fluid"
+							src="https://images.unsplash.com/photo-1589909202802-8f4aadce1849?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+						<p class="post-icons"><i class="fa-regular fa-heart"></i><i
+								class="fa-regular fa-comment ms-2 me-2"></i><i class="fa-regular fa-paper-plane"></i>
+						</p>
+						<p class="post-text"><strong>1936 Likes</strong></p>
+						<p class="post-text">Este post va de manera reperesentativa con lo que pretendo lograr en mi
+							camino, algo monumental, asi como éste que no fue construido en 2 dias sino poco a poco,
+							poder volver de esto algo iconico.</p>
+					</div>
+					<div class="individual-post col-12 col-md-8 mb-4">
+						<div class="post-header d-flex justify-content-between align-items-center p-2">
+							<h3>Barrio</h3>
+							<p>27/03/2026</p>
+						</div>
+						<img class="img-fluid"
+							src="https://images.unsplash.com/photo-1576541572620-cbc5457517b4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGFyZ2VudGluYXxlbnwwfHwwfHx8MA%3D%3D">
+						<p class="post-icons"><i class="fa-regular fa-heart"></i><i
+								class="fa-regular fa-comment ms-2 me-2"></i><i class="fa-regular fa-paper-plane"></i>
+						</p>
+						<p class="post-text"><strong>1166 Likes</strong></p>
+						<p class="post-text">Post dedicado al gran barrio de La Boca, lugar donde nació gran parte de la
+							historia de Buenos Aires y su gente, con los inmigrantes españoles, alemanes e italianos que
+							moldearon parte de la cultura en ese entonces. Donde se crió parte de la cuna del futbol con
+							los Xeneizes de Boca Juniors. Y donde con barcos se instauró el nombre de la Argentina a lo
+							largo del mundo.</p>
+					</div>
+					<div class="individual-post col-12 col-md-8 mb-4">
+						<div class="post-header d-flex justify-content-between align-items-center p-2">
+							<h3>Argentinas...siempre</h3>
+							<p>28/03/2026</p>
+						</div>
+						<img class="img-fluid"
+							src="https://images.unsplash.com/photo-1690488828989-e12b6f06516b?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+						<p class="post-icons"><i class="fa-regular fa-heart"></i><i
+								class="fa-regular fa-comment ms-2 me-2"></i><i class="fa-regular fa-paper-plane"></i>
+						</p>
+						<p class="post-text"><strong>1982 Likes</strong></p>
+						<p class="post-text">Foto recuerdo de un grán símbolo patrio como lo son las Islas Malvinas, por
+							los caídos y la lucha que representaron para una fuerza tal como la británica, en ese abril
+							del '82.</p>
+					</div>
+					<div class="individual-post col-12 col-md-8 mb-4">
+						<div class="post-header d-flex justify-content-between align-items-center p-2">
+							<h3>Gaucho</h3>
+							<p>29/03/2026</p>
+						</div>
+						<img class="img-fluid"
+							src="https://images.unsplash.com/photo-1616023586443-92f48106e41c?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+						<p class="post-icons"><i class="fa-regular fa-heart"></i><i
+								class="fa-regular fa-comment ms-2 me-2"></i><i class="fa-regular fa-paper-plane"></i>
+						</p>
+						<p class="post-text"><strong>1872 Likes</strong></p>
+						<p class="post-text">"...y ya que a juerza de golpes, la suerte nos dejó aflús, puede que allá
+							véamos luz y se acaben nuestras penas. Todas las tierras son güenas: vámosnós, amigo Cruz."
+							#MartinFierro</p>
+					</div>
+					<div class="individual-post col-12 col-md-8 mb-4">
+						<div class="post-header d-flex justify-content-between align-items-center p-2">
+							<h3>Amistad</h3>
+							<p>30/03/2026</p>
+						</div>
+						<img class="img-fluid"
+							src="https://images.unsplash.com/photo-1606494554797-279096d01a9a?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+						<p class="post-icons"><i class="fa-regular fa-heart"></i><i
+								class="fa-regular fa-comment ms-2 me-2"></i><i class="fa-regular fa-paper-plane"></i>
+						</p>
+						<p class="post-text"><strong>1714 Likes</strong></p>
+						<p class="post-text">Foto recuerdo de algún asado con los pibes #Extrañitis</p>
+					</div>
+					<div class="individual-post col-12 col-md-8 mb-4">
+						<div class="post-header d-flex justify-content-between align-items-center p-2">
+							<h3>Historia hecha cerro</h3>
+							<p>31/03/2026</p>
+						</div>
+						<img class="img-fluid"
+							src="https://images.unsplash.com/photo-1698315474418-afa588b03f0e?q=80&w=685&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+						<p class="post-icons"><i class="fa-regular fa-heart"></i><i
+								class="fa-regular fa-comment ms-2 me-2"></i><i class="fa-regular fa-paper-plane"></i>
+						</p>
+						<p class="post-text"><strong>2333 Likes</strong></p>
+						<p class="post-text">Cerro que, desde tu capa mas antigüa, ha podido vivir incontables eventos
+							historicos y hoy sigue en pie con sus 7 colores con base en el pueblo de Purmamarca,
+							provincia de Jujuy, Argenina.</p>
+					</div>
+					<div class="individual-post col-12 col-md-8 mb-4">
+						<div class="post-header d-flex justify-content-between align-items-center p-2">
+							<h3>Yguazú</h3>
+							<p>01/04/2026</p>
+						</div>
+						<img class="img-fluid"
+							src="https://images.unsplash.com/photo-1765974159972-91a3cda306e5?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+						<p class="post-icons"><i class="fa-regular fa-heart"></i><i
+								class="fa-regular fa-comment ms-2 me-2"></i><i class="fa-regular fa-paper-plane"></i>
+						</p>
+						<p class="post-text"><strong>1756 Likes</strong></p>
+						<p class="post-text">Una de las maravillas del mundo, conformada por 275 saltos de agua y capaz
+							de generar grán asombro, armonía y sensación de pequeñes por la magnitud de todo lo que te
+							rodea al estar ahí.</p>
+					</div>
+					<div class="individual-post col-12 col-md-8 mb-4">
+						<div class="post-header d-flex justify-content-between align-items-center p-2">
+							<h3>Cerro Torre</h3>
+							<p>02/04/2026</p>
+						</div>
+						<img class="img-fluid"
+							src="https://images.unsplash.com/photo-1680281290965-9288d18339a1?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+						<p class="post-icons"><i class="fa-regular fa-heart"></i><i
+								class="fa-regular fa-comment ms-2 me-2"></i><i class="fa-regular fa-paper-plane"></i>
+						</p>
+						<p class="post-text"><strong>3102 Likes</strong></p>
+						<p class="post-text">Para terminar mi feed quería enseñar esta grán postal del Cerro Torre en el
+							Parque Nacional Los Glaciares, Argenina. Es precioso ver la diversidad que puede alcanzar el
+							mundo y mas aún siendo a lo largo y ancho de un mismo país.</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- Modal del "Create a new post" -->
+
+	<div class="modal fade" id="postModal" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Create a new post</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+				</div>
+				<div class="modal-body">
+					<label class="form-label">Caption:</label>
+					<textarea class="form-control" placeholder="Add the caption of your post here"></textarea>
+
+					<div class="mt-2">
+						<button class="btn btn-light"><i class="fa fa-camera"></i></button>
+						<button class="btn btn-light"><i class="fa fa-location-dot"></i></button>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					<button class="btn btn-success">Publish</button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
